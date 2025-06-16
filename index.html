@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Car List</title>
+  <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+</head>
+<body class="p-4">
+  <div class="container">
+    <h2 class="mb-4">Car List</h2>
+
+    <form id="carForm" class="row g-3">
+      <div class="col-md-4">
+        <label class="form-label">Brand</label>
+        <input type="text" id="brand" class="form-control">
+      </div>
+      <div class="col-md-4">
+        <label class="form-label">Year</label>
+        <input type="number" id="year" class="form-control">
+      </div>
+      <div class="col-md-4">
+        <label class="form-label">Electric</label>
+        <select id="electric" class="form-select">
+          <option value="">Select</option>
+          <option value="Yes">Yes</option>
+          <option value="No">No</option>
+        </select>
+      </div>
+      <div class="col-12">
+        <button type="submit" class="btn btn-primary">Add Car</button>
+        <button type="button" id="clearBtn" class="btn btn-danger">Clear List</button>
+      </div>
+    </form>
+
+    <table class="table table-striped mt-4">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Brand</th>
+          <th>Year</th>
+          <th>Electric</th>
+        </tr>
+      </thead>
+      <tbody id="carTableBody"></tbody>
+    </table>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
